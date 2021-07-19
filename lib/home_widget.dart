@@ -12,8 +12,8 @@ class _HomeState extends State<Home> {
   int _currentIndex = 0;
   final List<Widget> _childreen = [
     HomePage(),
-    Explore(),
-    PastTripsPAge(),
+    ExplorePage(),
+    PastTripsPage(),
   ];
   @override
   Widget build(BuildContext context) {
