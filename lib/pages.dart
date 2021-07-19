@@ -10,8 +10,8 @@ class HomePage extends StatelessWidget {
     );
   }
 }
-class Explore extends StatelessWidget {
-  const Explore({Key? key}) : super(key: key);
+class ExplorePage extends StatelessWidget {
+  const ExplorePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,8 +20,8 @@ class Explore extends StatelessWidget {
     );
   }
 }
-class PastTripsPAge extends StatelessWidget {
-  const PastTripsPAge({Key? key}) : super(key: key);
+class PastTripsPage extends StatelessWidget {
+  const PastTripsPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
