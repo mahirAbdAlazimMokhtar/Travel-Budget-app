@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:travel_app/pages.dart';
 
 class Home extends StatefulWidget {
   Home({Key? key}) : super(key: key);
@@ -9,7 +10,11 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   int _currentIndex = 0;
-  final List<Widget> _childreen = [];
+  final List<Widget> _childreen = [
+    HomePage(),
+    Explore(),
+    PastTripsPAge(),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,7 +26,7 @@ class _HomeState extends State<Home> {
       body: _childreen[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         onTap: onTapTapped,
-        currentIndex: 1,
+        currentIndex: _currentIndex,
         items: [
           BottomNavigationBarItem(
             icon:const Icon(Icons.home),
@@ -41,6 +46,8 @@ class _HomeState extends State<Home> {
   }
 
   void onTapTapped(int index) {
-
+    setState(() {
+      _currentIndex = index;
+    });
   }
 }
