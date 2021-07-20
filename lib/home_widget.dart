@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:travel_app/pages.dart';
+import 'package:travel_app/screen/home_view.dart';
 
 class Home extends StatefulWidget {
   Home({Key? key}) : super(key: key);
@@ -11,7 +12,7 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   int _currentIndex = 0;
   final List<Widget> _childreen = [
-    HomePage(),
+    HomeView(),
     ExplorePage(),
     PastTripsPage(),
   ];
